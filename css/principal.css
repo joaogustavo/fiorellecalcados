@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset da modelo */
+.navegacao ul li:first-child a {
+	color: #252525;
+	pointer-events: none;
+}
+.banners {
+	display: block;
+}
+.titulos, .conteudos-navegacao {
+	display: none;
+	visibility: hidden;
+}
+.corpo {
+	margin-bottom: 35px;
+}
+/*  */
+.divisao {
+	border-bottom: solid 1px #fefcfa;
+	border-top: solid 1px #d4dadf;
+	margin: 0 auto;
+	margin-bottom: 27px;
+	max-width: 1030px;
+	width: 100%;
+}
+/* produtos */
+.produtos-container {
+	margin: 0 auto;
+	margin-bottom: 21px;
+	max-width: 1048px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+.produtos-nav-esq {
+	background: url(../img/navegacao-esq.png) no-repeat left top;
+	display: block;
+	height: 39px;
+	left: -45px;
+	position: absolute;
+	top: 45%;
+	width: 22px;
+}
+.produto {
+	box-shadow: 0.5px 0.866px 1px 0px rgba(0, 0, 0, 0.059);
+	background: #fff;
+	display: inline-block;
+	height: 297px;
+	margin: 15px .9%;
+	padding: 3px 2px;
+	text-align: center;
+	width: 237px;
+}
+.produto-img {
+	display: inline-block;
+	margin-bottom: 22px;
+}
+.produto a {
+	color: #000;
+	font-family: 'stag_sans_bookbook';
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.produto a:hover {
+	opacity: .6;
+	text-decoration: none;
+}
+.produtos-nav-dir {
+	background: url(../img/navegacao-dir.png) no-repeat left top;
+	display: block;
+	height: 39px;
+	position: absolute;
+	right: -45px;
+	top: 45%;
+	width: 22px;
+}
+.produtos-container:before {
+	background: url(../img/home-produtos-nicho-esq.png) no-repeat left top;
+	bottom: 35px;
+	content: "";
+	display: block;
+	height: 100rem;
+	left: -10px;
+	max-height: 60px;
+	max-width: 67px;
+	position: absolute;
+	width: 100%;
+}
+.produtos-link {
+	background: #302a29;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	color: #fff;
+	display: inline-block;
+	font-family: 'stag_sans_bookbook';
+	font-size: 2rem;
+	max-height: 45px;
+	max-width: 263px;
+	padding: 9px 2px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+.produtos-link:hover {
+	color: #fff;
+	text-decoration: none;
+	opacity: .8;
+}
+.produtos-link:before {
+	background: url(../img/chamada-banner-lateral-esq.png) no-repeat left top;
+	content: "";
+	display: block;
+	height: 13px;
+	left: -30px;
+	position: absolute;
+	top: 15px;
+	width: 28px;
+}
+.produtos-link:after {
+	background: url(../img/chamada-banner-lateral-dir.png) no-repeat left top;
+	content: "";
+	display: block;
+	height: 13px;
+	position: absolute;
+	right: -30px;
+	top: 15px;
+	width: 28px;
+}
+.produtos-container:after {
+	background: url(../img/home-produtos-nicho-dir.png) no-repeat left top;
+	bottom: 35px;
+	content: "";
+	display: block;
+	height: 100rem;
+	max-height: 60px;
+	max-width: 67px;
+	position: absolute;
+	right: -10px;
+	width: 100%;
+}
+/* instagram */
+.instagram-container {
+	margin: 0 auto;
+	max-width: 978px;
+	overflow: visible;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.instagram-titulo {
+	background: #000;
+	border-radius: 0px 40px 0 40px;
+	-webkit-border-radius: 0px 40px 0 40px;
+	-moz-border-radius: 0px 40px 0 40px;
+	display: inline-block;
+	float: left;
+	margin-right: 6px;
+	max-width: 136px;
+	padding: 42px 10px 51px 10px;
+	text-align: center;
+	width: 100%;
+}
+.instagram-container iframe {
+	background: #c4bdb5;
+	border-radius: 40px 0px 40px 0px;
+	-webkit-border-radius: 40px 0px 40px 0px;
+	-moz-border-radius: 40px 0px 40px 0px;
+	display: inline-block;
+	float: left;
+	max-width: 830px;
+	min-height: 193px;
+	padding: 11px 20px;
+	position: relative;
+	width: 100%;
+	z-index: 3;
+}
+.instagram-container:after {
+	background: url(../img/conteudos-navegacao-circulo.png) no-repeat left top;
+	content: "";
+	display: block;
+	height: 107px;
+	position: absolute;
+	right: -25px;
+	top: 43px;
+	width: 107px;
+	z-index: 2;
+}
+@media screen and (max-width: 1154px) {
+.produtos-container {
+	width: 90%;
+}
+}
+@media screen and (max-width: 1029px) {
+.instagram-container:after {
+	right: -12px;
+	top: 45px;
+}
+.instagram-titulo {
+	border-radius: 40px 0 0 0;
+	-webkit-border-radius: 40px 0 0 0;
+	-moz-border-radius: 40px 0 0 0;
+	display: block;
+	float: none;
+	margin: 0 auto;
+	max-height: 45px;
+	max-width: 830px;
+	padding: 10px;
+	padding-left: 35px;
+	text-align: left;
+}
+.instagram-titulo a, .instagram-titulo a:hover {
+	pointer-events: none;
+}
+.instagram-container iframe {
+	border-radius: 0px 0px 40px 0px;
+	-webkit-border-radius: 0px 0px 40px 0px;
+	-moz-border-radius: 0px 0px 40px 0px;
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
+}
+@media screen and (max-width: 767px) {
+.produtos-container {
+	margin-bottom: 70px;
+	padding-bottom: 25px;
+}
+.produtos-link {
+	margin-bottom: -75px !important;
+}
+}
+@media screen and (max-width: 699px) {
+.produtos-nav-esq {
+	left: 0;
+}
+.produtos-nav-dir {
+	right: 0;
+}
+}
+@media screen and (max-width: 399px) {
+.produtos-nav-esq, .produtos-nav-dir {
+	display: none;
+	visibility: hidden;
+}
+}
